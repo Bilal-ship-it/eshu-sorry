@@ -1,0 +1,369 @@
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Sorry Eshu ❤️</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top left,#222,#050505 45%),
+    linear-gradient(135deg,#000,#111,#020202);
+
+}
+
+
+
+/* BACKGROUND */
+
+.bg{
+
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+
+}
+
+
+.glow{
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.4;
+
+}
+
+
+
+.one{
+
+    background:#555;
+
+    top:-120px;
+    left:-120px;
+
+    animation:move1 10s infinite alternate;
+
+}
+
+
+
+.two{
+
+    background:#222;
+
+    bottom:-120px;
+    right:-120px;
+
+    animation:move2 12s infinite alternate;
+
+}
+
+
+
+@keyframes move1{
+
+to{
+
+transform:translate(250px,180px);
+
+}
+
+}
+
+
+
+@keyframes move2{
+
+to{
+
+transform:translate(-250px,-180px);
+
+}
+
+}
+
+
+
+/* CARD */
+
+.card{
+
+position:relative;
+
+z-index:5;
+
+width:90%;
+
+max-width:400px;
+
+padding:20px;
+
+
+background:rgba(20,20,20,.85);
+
+border:1px solid rgba(255,255,255,.15);
+
+backdrop-filter:blur(20px);
+
+
+border-radius:25px;
+
+text-align:center;
+
+color:white;
+
+
+box-shadow:0 0 50px black;
+
+
+animation:show 1s;
+
+}
+
+
+
+@keyframes show{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+
+
+/* IMAGE */
+
+img{
+
+width:110px;
+
+height:110px;
+
+
+object-fit:cover;
+
+border-radius:50%;
+
+
+border:4px solid #888;
+
+
+box-shadow:0 0 30px #555;
+
+
+animation:bounce 3s infinite;
+
+}
+
+
+
+@keyframes bounce{
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
+
+
+
+/* TEXT */
+
+h1{
+
+margin:15px 0;
+
+font-family:Georgia,serif;
+
+font-size:28px;
+
+color:#eee;
+
+}
+
+
+
+p{
+
+font-family:'Trebuchet MS',sans-serif;
+
+font-size:13px;
+
+line-height:1.5;
+
+color:#ddd;
+
+}
+
+
+
+/* BUTTON */
+
+button{
+
+margin-top:15px;
+
+padding:11px 30px;
+
+
+border-radius:50px;
+
+border:none;
+
+
+background:#333;
+
+border:1px solid #777;
+
+
+color:white;
+
+
+font-size:16px;
+
+font-family:'Courier New',monospace;
+
+
+cursor:pointer;
+
+
+transition:.3s;
+
+}
+
+
+
+button:hover{
+
+transform:scale(1.1);
+
+background:#555;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<div class="bg">
+
+<div class="glow one"></div>
+
+<div class="glow two"></div>
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<img src="eshu.jpg">
+
+
+
+<h1>I'm Sorry Eshu ❤️</h1>
+
+
+
+<p>
+
+eshuu...
+
+<br><br>
+
+mujhe pata hai tumhe bura laga tha 🥲
+
+<br><br>
+
+mai tumhe ignore nahi kar raha tha.
+
+mera mood bohat off tha aur mai bas thora akela rehna chahta tha.
+
+<br><br>
+
+Aisha se baat karna iska matlab ye nahi tha ke mai tumse baat nahi karna chahta.
+
+<br><br>
+
+tum honestly meri favourite person ho baat karne ke liye ❤️
+
+<br><br>
+
+please is choti si misunderstanding ko bara mat banao.
+
+<br><br>
+
+sorry eshuu 🤍
+
+</p>
+
+
+
+<button onclick="window.location.href='forgive.html'">
+
+Forgive me? 🥺
+
+</button>
+
+
+
+</div>
+
+
+</body>
+
+</html>
+```
